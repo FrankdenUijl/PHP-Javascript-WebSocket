@@ -5,7 +5,8 @@ function init(){
 	websocket._log._ignoreAll = false;
 
 	websocket._onMessage = function(_msgObject, _type, _sender){
-		console.log("Get message:")
+		thisMovie("territory").socketMessage(_msgObject, _type, _sender);
+		console.log("Get message: "+_msgObject)
 		console.log(_msgObject)
 		console.log("type: "+_type)
 		console.log("sender: "+_sender)
