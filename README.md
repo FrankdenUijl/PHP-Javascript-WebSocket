@@ -65,6 +65,6 @@ websocket._onopen = function(){
 //functions to send messages:
 
 websocket._sendAll('message') 
-websocket._sendUser('message')
+websocket._sendUser('message', who)
 websocket._sendTeam('message', who)
 ```
