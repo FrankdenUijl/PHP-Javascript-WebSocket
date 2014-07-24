@@ -26,6 +26,8 @@ First you need to run the PHP server, this is done in the command prompt in wind
 
 -->php websocket.php
 
+Then in javascript:
+
 ``` js
 websocket = new _webSocket('ws://localhost:5002');
 websocket._log._iqnoreType("Info") // ignore info message in to console.log
